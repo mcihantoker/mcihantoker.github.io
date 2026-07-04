@@ -301,6 +301,7 @@ section:last-of-type{border-bottom:none;}
       <li><span class="num">02</span><span class="title">Gamified Vocabulary — Game of YÖKDİL &amp; YDS</span><span class="tag">Open Source · Live</span></li>
       <li><span class="num">03</span><span class="title">Yanımda — Family Support App</span><span class="tag">Social Impact · Pre-launch</span></li>
       <li><span class="num">04</span><span class="title">TAMU: Yedi Katlı Karanlık</span><span class="tag">Game Design · Pre-production</span></li>
+      <li><span class="num">05</span><span class="title">Uzun Eşek Online — 4v4 Team Game</span><span class="tag">Unity · Pre-production</span></li>
     </ul>
   </section>
 
@@ -403,6 +404,32 @@ section:last-of-type{border-bottom:none;}
               <dt>Layers</dt><dd>7, each with its own traversal verb, ancestor spirit, and boss</dd>
               <dt>Structure</dt><dd>Death-and-return roguelite loop, permanent growth at camp</dd>
               <dt>Reference</dt><dd>Hades, Diablo, Prince of Persia: The Lost Crown</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scene" id="scene-05">
+      <div class="ghost mono">05</div>
+      <div class="inner">
+        <div class="eyebrow slug">EXT. STREET GAME — FOUR ON FOUR</div>
+        <h3>Uzun Eşek Online</h3>
+        <div class="fam">A Turkish street game, turned into a 4v4 turn-based mobile match</div>
+        <div class="grid">
+          <div>
+            <p>Uzun Eşek is a schoolyard game played by two teams of four — one side forms a human chain to vault over, the other tries to break it by landing wrong. This project rebuilds that contest as a 4v4 turn-based mobile match: card-based team plays decide each round, a stability calculation stands in for the chain's balance, and Unity's Netcode for GameObjects carries it online. The rules engine is pure C#, built and tested independent of the Editor — 2,000 simulated matches surfaced a first-pass balance skew that a rebalancing pass brought to roughly 52/48, not yet confirmed with real players.</p>
+            <div class="chips">
+              <span class="chip">Unity 6000 LTS</span><span class="chip">Netcode for GameObjects</span><span class="chip">URP</span>
+            </div>
+            <div class="status wip"><span class="led"></span>Pre-production — engine simulated, networking layer next</div>
+            <a class="link" href="https://github.com/mcihantoker/uzunesek" target="_blank" rel="noopener">→ github.com/mcihantoker/uzunesek</a>
+          </div>
+          <div class="spec">
+            <dl>
+              <dt>Teams</dt><dd>4v4, card-based turns, stability/balance win condition</dd>
+              <dt>Validation</dt><dd>2,000 simulated matches; rebalance brought split to ~52%/48%</dd>
+              <dt>Stack</dt><dd>Unity 6000.0.78f1 LTS, Netcode for GameObjects, URP</dd>
             </dl>
           </div>
         </div>
