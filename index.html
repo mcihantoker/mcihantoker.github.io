@@ -303,6 +303,7 @@ section:last-of-type{border-bottom:none;}
       <li><span class="num">04</span><span class="title">TAMU: Yedi Katlı Karanlık</span><span class="tag">Game Design · Pre-production</span></li>
       <li><span class="num">05</span><span class="title">Uzun Eşek Online — 4v4 Team Game</span><span class="tag">Unity · Pre-production</span></li>
       <li><span class="num">06</span><span class="title">Kolayfon — Simplified Phone for Elderly Users</span><span class="tag">Accessibility · Pre-launch</span></li>
+      <li><span class="num">07</span><span class="title">SEO Auditor — Claude-Powered Page Audits</span><span class="tag">Developer Tool · Prototype</span></li>
     </ul>
   </section>
 
@@ -456,6 +457,31 @@ section:last-of-type{border-bottom:none;}
               <dt>Android</dt><dd>Launcher replacement (Kotlin + Compose), real ACTION_CALL emergency button</dd>
               <dt>iOS</dt><dd>Companion app + WidgetKit widget (SwiftUI) — no launcher replacement on iOS</dd>
               <dt>Scope</dt><dd>Call, message, camera, emergency — confirmation step before every call, mock contacts, no backend yet</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scene" id="scene-07">
+      <div class="ghost mono">07</div>
+      <div class="inner">
+        <div class="eyebrow slug">INT. AUDIT DASHBOARD — SIGNAL FROM NOISE</div>
+        <h3>SEO Auditor</h3>
+        <div class="fam">Point it at a URL, get back what actually needs fixing — not a wall of metrics</div>
+        <div class="grid">
+          <div>
+            <p>A small FastAPI + Next.js tool that fetches a page, extracts its SEO/content signals — title and meta-description length, heading structure, image alt-text coverage — and hands them to Claude to turn into a prioritized, plain-language action list instead of a raw metrics dump. Runs bring-your-own-key: each user's Claude API key lives only in their browser's local storage and is never stored or logged server-side.</p>
+            <div class="chips">
+              <span class="chip">FastAPI</span><span class="chip">Next.js</span><span class="chip">BeautifulSoup</span><span class="chip">Claude API</span><span class="chip">BYOK</span>
+            </div>
+            <div class="status wip"><span class="led"></span>Prototype — working end-to-end locally, not yet deployed</div>
+          </div>
+          <div class="spec">
+            <dl>
+              <dt>Pipeline</dt><dd>URL → HTML fetch → signal extraction → Claude prioritization</dd>
+              <dt>Signals</dt><dd>Title/meta length, heading tree, missing alt-text count</dd>
+              <dt>Auth model</dt><dd>BYOK — key stored client-side only, sent per-request, never persisted server-side</dd>
             </dl>
           </div>
         </div>
